@@ -1,0 +1,41 @@
+import java.io.*;
+class Substring
+{
+public static void main(String args[])throws IOException
+{
+BufferedReader br=BufferedReader(new InputStreamReader(System.in));
+System.out.println("enter  any  string");
+String S=br.readLine();
+System.out.println("enter index1");
+int i1=Integer.parser(br.readLine());
+System.out.println("enter index2");
+int i2=Integer.parser(br.readLine());
+String str=S.substring(i1,i2);
+System.out.println("substring is:");
+}
+}
+
+
+
+ 
+  
+   
+  
+   
+
+
+ 
+
+
+ 
+   
+
+
+     
+     
+    
+
+      
+     
+ 
+      
