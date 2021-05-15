@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.Scanner;
+class Appfile
+{
+public static void main(String args[])
+{
+try
+{
+Scanner sc=new Scanner(System.in);
+String s;
+RandomAccessFile f=new RandomAccessFile("Substring.java","rw");
+f.seek(f.length());
+System.out.println("enter  content to append");
+s=sc.next();
+f.writeBytes(s);
+f.close();
+}
+catch(IOException ioe)
+{
+System.out.println(ioe);
+}
+}
+}
